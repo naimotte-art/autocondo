@@ -409,3 +409,17 @@ li a {
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 600px) {
+    .hero_title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        width: 90%;
+    }
+
+    .hero_secondary_title {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        width: 90%;
+    }
+}
