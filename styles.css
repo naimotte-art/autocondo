@@ -426,3 +426,144 @@ li a {
         width: 90%;
     }
 }
+
+/* pricing */
+.pricing_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.pricing_card {
+    padding: 2.5rem 2rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricing_card_featured {
+    background: black;
+    color: white;
+}
+
+.pricing_card_featured .btn-primary {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+.pricing_card_featured .btn-primary:hover {
+    background: black;
+    color: white;
+    border-color: white;
+}
+
+.pricing_tier {
+    font-family: "Sifonn";
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #aaa;
+}
+
+.pricing_card_featured .pricing_tier {
+    color: #888;
+}
+
+.pricing_price {
+    font-family: "Sifonn";
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.pricing_price span {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.pricing_features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-family: "Sifonn";
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.pricing_features li::before {
+    content: "→ ";
+}
+
+.pricing_card_featured .pricing_features {
+    color: #ccc;
+}
+
+/* demo */
+.demo_frame {
+    margin-top: 3rem;
+    border: 2px solid black;
+    aspect-ratio: 16 / 9;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo_placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Sifonn";
+    color: #aaa;
+}
+
+.demo_play {
+    font-size: 3rem;
+    color: black;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    .pricing_grid { grid-template-columns: 1fr; }
+    .demo_frame { width: 100%; }
+}
+
+.demo_cta {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    border-top: 2px solid black;
+}
+
+.demo_cta_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid black;
+}
+
+.demo_cta_number {
+    font-family: "Sifonn";
+    font-size: 1rem;
+    color: #aaa;
+    min-width: 2rem;
+    padding-top: 0.2rem;
+}
+
+.demo_cta_title {
+    font-family: "Sifonn";
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.demo_cta_body {
+    font-family: "Sifonn";
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
