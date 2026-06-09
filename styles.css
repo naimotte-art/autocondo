@@ -30,6 +30,10 @@ body {
     padding: 0 1.5rem;
     min-height: 70px;
     border-bottom: solid 2px black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
 }
 
 .logo {
@@ -76,7 +80,6 @@ li a {
 
 @media (max-width: 600px) {
     .nav {
-        position: fixed;
         top: 0;
         left: 0;
         right: 0;
