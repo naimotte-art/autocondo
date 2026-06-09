@@ -58,6 +58,7 @@ li a {
     border: none;
     cursor: pointer;
     padding: 8px;
+    color: black;
 }
 
 .hamburger span {
